@@ -18,18 +18,18 @@ app.post("/api/token", async (req, res) => {
       "Content-Type": "application/x-www-form-urlencoded",
     },
     body: new URLSearchParams({
-      client_id: process.env.VITE_DISCORD_CLIENT_ID,
-      client_secret: process.env.DISCORD_CLIENT_SECRET,
+      client_id: process.env.1311372319268012032,
+      client_secret: process.env.d9Sej_DX9bS9ucab04JGbNt5lGs4j8kD,
       grant_type: "authorization_code",
       code: req.body.code,
     }),
   });
 
   // Retrieve the access_token from the response
-  const { access_token } = await response.json();
+  const { MTMxMTM3MjMxOTI2ODAxMjAzMg.GCuN04.Vg4II85xwNUbldyPUMp4fVEClLEE7HmDgnhQuM } = await response.json();
 
   // Return the access_token to our client as { access_token: "..."}
-  res.send({access_token});
+  res.send({MTMxMTM3MjMxOTI2ODAxMjAzMg.GCuN04.Vg4II85xwNUbldyPUMp4fVEClLEE7HmDgnhQuM});
 });
 
 app.listen(port, () => {
